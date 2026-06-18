@@ -1,0 +1,41 @@
+#box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+.fade {
+  animation: fade 1s forwards;
+}
+
+.move {
+  animation: move 1s forwards;
+}
+
+.rotate {
+  animation: rotate 1s forwards;
+}
+
+.color {
+  animation: color 1s forwards;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(200px); }
+}
+
+@keyframes rotate {
+  from { transform: translateX(200px) rotate(0deg); }
+  to { transform: translateX(200px) rotate(360deg); }
+}
+
+@keyframes color {
+  from { background: blue; }
+  to { background: red; }
+}
